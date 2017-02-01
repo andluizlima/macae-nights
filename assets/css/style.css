@@ -1,0 +1,254 @@
+html, body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	background-image: url("../img/night.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#barraMenu{
+	font-family: inherit;
+}
+.navbar-default{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+	font-size: 15px;
+	border-radius: 0px;
+	border-style: none;
+	background-color: black;
+	padding: 5px 0px;
+}
+.container-fluid{
+	margin: 0px 30px;
+}
+.navbar a{
+	color: grey;
+}
+.navbar a:visited{
+	color: white;
+}
+.navbar-header h3{
+	padding: 0px;
+	color: white;
+	margin: 0px;
+	font-weight: 300;
+}
+.navbar-brand a{
+	padding: 20px 0px;
+}
+.menu{
+	position: absolute;
+	width: 250px;
+	height: 700px;
+	background-color: black;
+	top: 0px;
+	left: calc(100%);
+	transition: 1s;
+}
+.navbar-right{
+	margin-top: 20px;
+	margin-right: 5px;
+}
+.menu ul:nth-child(2){
+	border-top: solid;
+	border-bottom: solid;
+}
+.menu li{
+	margin: 10px 0px;
+	list-style: none;
+	font-weight: 300;
+	color: #888;
+}
+.menu h2{
+	margin-left: 25px;
+	margin-top: 80px;
+	margin-bottom: 50px;
+	font-weight: 300;
+	color: #bbb;
+}
+.botaoMenu{
+	color: #888;
+	font-weight: 300;
+}
+.botaoMenu:after{
+	content:'MENU';
+}
+#navicon{
+	display: none;
+}
+#navicon:checked + label:after{
+	content: 'X';
+}
+#navicon:checked ~ .menu{
+	transition: 1s;
+	left: calc(100% - 250px);
+}
+.botaoMenu{
+	text-align: center;
+	right: 50px;
+	position: absolute;
+	z-index: 500;
+}
+.linha{
+	clear: both;
+}
+
+
+
+
+
+
+#apresentacao{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.transparencia{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+}
+.caixaTexto{
+	color: #eee;
+	position: absolute;
+	top: calc(50% - 50px);
+	left: calc(50% - 250px);
+	text-align: center;
+	height: 100px;
+	width: 500px;
+}
+.caixaTexto h1{
+	font-size: 52px;
+}
+.caixaTexto h3{
+	font-size: 28px;
+	font-weight: 100;
+}
+#chamadas{
+	font-family: helvetica;
+	position: relative;
+	font-weight: 300;
+	color: black;
+}
+.postH{
+	font-family: inherit;
+	background-color: white;
+	height: 400px;
+	background-size: cover;
+	background-position: center;
+	padding: 0px;
+	font-size: 100%;
+}
+.postH a{
+	padding: 10px 20px;
+	font-weight: 500;
+	font-size: 18px;
+	border: solid;
+	border-width: 2px;
+	text-decoration: none;
+	background-color: rgba(0,0,0,0);;
+	transition: 0.5s;
+}
+.postH a:hover{
+	transition: 0.5s;
+}
+.postH h2, p{
+	margin: 0;
+	padding: 20px;
+}
+.right{
+	text-align: right;
+}
+.right p{
+	padding-left: 150px;
+}
+.left{
+	text-align: left;
+}
+.left p{
+	padding-right: 150px;
+}
+
+.blueFront a{
+	border-color: #ddd;
+}
+.blueFront h2, .blueFront a, .blueFront a:hover{
+	color: #3498db;
+}
+.blueFront a:hover{
+	background-color: rgba(0,0,0,0.03);
+}
+
+.postH .blueBack{
+	height: 400px;
+	background-size: cover;
+	background-color: #3498db;
+	color: white;
+}
+.postH .blueBack a{
+	border-color: rgba(255, 255, 255, 0.5);
+	color: white;
+}
+.postH .blueBack a:hover{
+	background-color: rgba(255,255,255,0.1);
+}
+
+.greenFront a{
+	border-color: #ddd;
+}
+.greenFront h2, .greenFront a, .greenFront a:hover{
+	color: #1abc9c;
+}
+.greenFront a:hover{
+	background-color: rgba(0,0,0,0.03);
+}
+.postH .greenBack{
+	height: 400px;
+	background-size: cover;
+	background-color: #1abc9c;
+	color: white;
+}
+.greenBack a{
+	border-color: rgba(255, 255, 255, 0.5);
+	color: white;
+}
+.postH .greenBack a:hover{
+	background-color: rgba(255,255,255,0.1);
+}
+
+.col-md-6, .col-sm-6, .col-xs-12{
+	margin: 0px;
+	padding: 0px;
+}
+/* Estilos para o footer */
+#footer{
+	background-color: black;
+	padding: 70px 0px;
+}
+.icons{
+	text-align: center;
+	color: #aaa;
+	font-size: 40px;
+}
+.fa{
+	padding: 0px 15px;
+	margin-bottom: 40px;
+	margin-top: 10px;
+	transition: 0.5s;
+}
+.fa:hover{
+	color: white;
+	transition: 0.5s;
+}
+.copyright{
+	color: rgba(255, 255, 255, 0.5);
+	font-family: helvetica;
+	text-align: center;
+	font-weight: 400;
+	margin-bottom: 0px;
+}
